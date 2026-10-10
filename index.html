@@ -191,6 +191,36 @@
         </div>
       </section>
 
+      <section class="section assistant-section" aria-labelledby="assistant-heading">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">INTERACTIVE DEMO / SYSTEM PROMPT</p>
+            <h2 id="assistant-heading">Interrogate this<br><span>portfolio system.</span></h2>
+          </div>
+          <p>A lightweight assistant stuffed with my background, GCP pipeline architectures, and tool stacks.</p>
+        </div>
+
+        <div class="assistant-card">
+          <div class="assistant-header">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>MODEL: GEMINI 1.5 FLASH (FREE TIER)</span>
+          </div>
+          <form id="portfolio-assistant-form" class="assistant-form">
+            <input 
+              type="text" 
+              id="assistant-input" 
+              placeholder="e.g., How do you handle Pub/Sub retries in GCP?" 
+              required 
+              maxlength="200"
+            >
+            <button type="submit" id="assistant-submit" class="button button-primary">
+              Ask System <span aria-hidden="true">→</span>
+            </button>
+          </form>
+          <div id="assistant-output" class="assistant-output" hidden></div>
+        </div>
+      </section>
+
       <section class="contact" aria-labelledby="contact-heading">
         <div><p class="kicker">04 / LET'S CONNECT</p><h2 id="contact-heading">Want to discuss<br><em>systems or workflows?</em></h2><p>Feel free to reach out to connect or discuss applied AI, automation, and cloud architecture.</p></div>
         <div class="contact-actions">
@@ -201,5 +231,38 @@
     </main>
     <footer><span>© 2026 Arafaat Shaikh</span><span>Designed for clarity. Built to ship.</span><a href="#top">Back to top ↑</a></footer>
   </div>
+  <script>
+    const form = document.getElementById('portfolio-assistant-form');
+    const input = document.getElementById('assistant-input');
+    const submitBtn = document.getElementById('assistant-submit');
+    const output = document.getElementById('assistant-output');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const userQuery = input.value.trim();
+      if (!userQuery) return;
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Querying...';
+      output.hidden = false;
+      output.innerHTML = '<em>Consulting portfolio context...</em>';
+
+      try {
+        const res = await fetch('/api/chat', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ message: userQuery })
+        });
+
+        const data = await res.json();
+        output.innerHTML = `<p>${data.reply}</p>`;
+      } catch (err) {
+        output.innerHTML = '<p>Unable to query system context right now. Please email Arafaat directly.</p>';
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = 'Ask System <span aria-hidden="true">→</span>';
+      }
+    });
+  </script>
 </body>
 </html>
