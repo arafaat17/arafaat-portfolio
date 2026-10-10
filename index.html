@@ -73,51 +73,51 @@
             </div>
           </article>
 
-<article class="project">
-  <div class="project-main">
-    <div class="project-meta">
-      <span class="project-number">02</span>
-      <span class="project-label">ANONYMIZED CASE STUDY · EVENT-DRIVEN AI PIPELINE</span>
-    </div>
-    <h3>Multi-modal customer context & voice/chat processing.</h3>
-    <p>
-      Designed an event-driven ingestion and synthesis pipeline that decoupled CRM webhooks, processed chat transcripts and voice attachments, and executed validated LLM summarization back into enterprise customer tools.
-    </p>
-    <div class="project-outcome">
-      <span class="outcome-label">System Capability & Reliability</span>
-      <p>
-        Handles async queue dispatching, automated reconciliation for stale events via Cloud Scheduler, and audit logging backed by BigQuery dashboards.
-      </p>
-    </div>
-    <details>
-      <summary>What made it an engineering problem <span aria-hidden="true">↗</span></summary>
-      <p>
-        Building for production meant managing state across Firestore, handling voice transcription via AssemblyAI, ensuring rate-limit recovery with Cloud Tasks, and establishing strict error callbacks when LLM validation failed.
-      </p>
-    </details>
-  </div>
-  <div class="project-aside">
-    <figure class="architecture">
-      <figcaption>High-level cloud architecture</figcaption>
-      <ol>
-        <li><strong>API Gateway &amp; Pub/Sub</strong><small>Ingress publisher &amp; event decoupling</small></li>
-        <li><strong>Cloud Tasks &amp; Firestore</strong><small>Async queue dispatch &amp; lifecycle state</small></li>
-        <li><strong>AssemblyAI &amp; Gemini</strong><small>Voice transcription &amp; LLM validation</small></li>
-        <li><strong>CRM &amp; BigQuery</strong><small>Validated write-back &amp; audit logging</small></li>
-        <li><strong>Scheduler &amp; Alerts</strong><small>Reconciliation loops &amp; retry handlers</small></li>
-      </ol>
-      <p class="architecture-note">Illustrative flow; internal endpoints, data and proprietary business rules omitted.</p>
-    </figure>
-    <div class="tags">
-      <span>GCP</span>
-      <span>Pub/Sub</span>
-      <span>Cloud Tasks</span>
-      <span>Gemini</span>
-      <span>AssemblyAI</span>
-      <span>BigQuery</span>
-    </div>
-  </div>
-</article>
+          <article class="project">
+            <div class="project-main">
+              <div class="project-meta">
+                <span class="project-number">02</span>
+                <span class="project-label">ANONYMIZED CASE STUDY · EVENT-DRIVEN AI PIPELINE</span>
+              </div>
+              <h3>Multi-modal customer context &amp; voice/chat processing.</h3>
+              <p>
+                Designed an event-driven ingestion and synthesis pipeline that decoupled CRM webhooks, processed chat transcripts and voice attachments, and executed validated LLM summarization back into enterprise customer tools.
+              </p>
+              <div class="project-outcome">
+                <span class="outcome-label">System Capability &amp; Reliability</span>
+                <p>
+                  Handles async queue dispatching, automated reconciliation for stale events via Cloud Scheduler, and audit logging backed by BigQuery dashboards.
+                </p>
+              </div>
+              <details>
+                <summary>What made it an engineering problem <span aria-hidden="true">↗</span></summary>
+                <p>
+                  Building for production meant managing state across Firestore, handling voice transcription via AssemblyAI, ensuring rate-limit recovery with Cloud Tasks, and establishing strict error callbacks when LLM validation failed.
+                </p>
+              </details>
+            </div>
+            <div class="project-aside">
+              <figure class="architecture">
+                <figcaption>High-level cloud architecture</figcaption>
+                <ol>
+                  <li><strong>API Gateway &amp; Pub/Sub</strong><small>Ingress publisher &amp; event decoupling</small></li>
+                  <li><strong>Cloud Tasks &amp; Firestore</strong><small>Async queue dispatch &amp; lifecycle state</small></li>
+                  <li><strong>AssemblyAI &amp; Gemini</strong><small>Voice transcription &amp; LLM validation</small></li>
+                  <li><strong>CRM &amp; BigQuery</strong><small>Validated write-back &amp; audit logging</small></li>
+                  <li><strong>Scheduler &amp; Alerts</strong><small>Reconciliation loops &amp; retry handlers</small></li>
+                </ol>
+                <p class="architecture-note">Illustrative flow; internal endpoints, data and proprietary business rules omitted.</p>
+              </figure>
+              <div class="tags">
+                <span>GCP</span>
+                <span>Pub/Sub</span>
+                <span>Cloud Tasks</span>
+                <span>Gemini</span>
+                <span>AssemblyAI</span>
+                <span>BigQuery</span>
+              </div>
+            </div>
+          </article>
 
           <article class="project">
             <div class="project-main">
@@ -125,7 +125,7 @@
               <h3>Make long documents easier to act on.</h3>
               <p>Built a document analysis workflow that turns lengthy case material and conversation history into structured summaries, with attention to source context and separation between sessions.</p>
               <div class="project-outcome">
-                <span class="outcome-label">System Capability & Outcome</span>
+                <span class="outcome-label">System Capability &amp; Outcome</span>
                 <p>Unifies multi-document ingestion, session isolation, and LLM text extractions into a single review interface with source context attribution.</p>
               </div>
               <details><summary>What made it an engineering problem <span aria-hidden="true">↗</span></summary><p>The work spans ingestion, model orchestration, access boundaries, and an interface that lets a person inspect and use the result. The goal is faster understanding while keeping judgment with the reviewer.</p></details>
@@ -151,7 +151,7 @@
               <h3>Keep the workflow working after launch.</h3>
               <p>Connected events, APIs, and cloud services into operational workflows, then investigated failures and added clearer retry and alerting paths. The focus: making automation understandable when something goes wrong.</p>
               <div class="project-outcome">
-                <span class="outcome-label">System Capability & Outcome</span>
+                <span class="outcome-label">System Capability &amp; Outcome</span>
                 <p>Establishes centralized event routing, automated retry handlers, and logging mechanisms to identify and resolve operational failures across cloud services.</p>
               </div>
               <details><summary>What made it an engineering problem <span aria-hidden="true">↗</span></summary><p>A useful workflow needs dependable handoffs, good failure signals, and a safe way to recover. I work across the application and infrastructure layers to make those pieces fit.</p></details>
@@ -231,6 +231,7 @@
     </main>
     <footer><span>© 2026 Arafaat Shaikh</span><span>Designed for clarity. Built to ship.</span><a href="#top">Back to top ↑</a></footer>
   </div>
+
   <script>
     const form = document.getElementById('portfolio-assistant-form');
     const input = document.getElementById('assistant-input');
@@ -255,9 +256,16 @@
         });
 
         const data = await res.json();
-        output.innerHTML = `<p>${data.reply}</p>`;
+
+        if (data.reply) {
+          output.innerHTML = `<p>${data.reply}</p>`;
+        } else if (data.error) {
+          output.innerHTML = `<p style="color: #ff9999;"><strong>System Notice:</strong> ${data.error}</p>`;
+        } else {
+          output.innerHTML = '<p>Unexpected system response. Please try again.</p>';
+        }
       } catch (err) {
-        output.innerHTML = '<p>Unable to query system context right now. Please email Arafaat directly.</p>';
+        output.innerHTML = '<p>Unable to connect to assistant service. Please email Arafaat directly.</p>';
       } finally {
         submitBtn.disabled = false;
         submitBtn.innerHTML = 'Ask System <span aria-hidden="true">→</span>';
