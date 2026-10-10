@@ -3,7 +3,7 @@ export async function POST(req) {
     const { message } = await req.json();
 
     if (!message || message.trim().length === 0) {
-      return new Response(JSON.stringify({ error: "Empty prompt" }), { status: 400 });
+      return new Response(JSON.stringify({ error: "Empty query provided." }), { status: 400 });
     }
 
     const SYSTEM_PROMPT = `
@@ -51,7 +51,7 @@ RULES:
 
     const apiKey = process.env.GEMINI_API_KEY;
     if (!apiKey) {
-      return new Response(JSON.stringify({ error: "API Key missing in server environment." }), { status: 500 });
+      return new Response(JSON.stringify({ error: "GEMINI_API_KEY is not set in environment variables." }), { status: 500 });
     }
 
     const response = await fetch(
@@ -69,6 +69,11 @@ RULES:
     );
 
     const data = await response.json();
+
+    if (data.error) {
+      return new Response(JSON.stringify({ error: data.error.message || "Gemini API error." }), { status: 500 });
+    }
+
     const reply = data.candidates?.[0]?.content?.parts?.[0]?.text || "System context unavailable. Please contact Arafaat directly.";
 
     return new Response(JSON.stringify({ reply }), {
