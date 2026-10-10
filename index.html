@@ -73,31 +73,51 @@
             </div>
           </article>
 
-          <article class="project">
-            <div class="project-main">
-              <div class="project-meta"><span class="project-number">02</span><span class="project-label">ANONYMIZED CASE STUDY · APPLIED AI</span></div>
-              <h3>A grounded assistant for complex service work.</h3>
-              <p>Designed an assistant workflow that gathers relevant customer context, uses model reasoning to produce a concise summary, and passes the result into an existing human review process.</p>
-              <div class="project-outcome">
-                <span class="outcome-label">System Capability & Outcome</span>
-                <p>Integrates structured conversation summaries directly into the CRM workflow, eliminating context switching and streamlining manual wrap-up steps.</p>
-              </div>
-              <details><summary>What made it an engineering problem <span aria-hidden="true">↗</span></summary><p>Connecting multiple systems safely mattered as much as the prompt: structured tool inputs, clear boundaries around sensitive data, and a review step before any consequential action.</p></details>
-            </div>
-            <div class="project-aside">
-              <figure class="architecture">
-                <figcaption>High-level architecture</figcaption>
-                <ol>
-                  <li><strong>CRM event</strong><small>Conversation context</small></li>
-                  <li><strong>API / tools</strong><small>Gather relevant inputs</small></li>
-                  <li><strong>LLM</strong><small>Generate summary</small></li>
-                  <li><strong>CRM output</strong><small>Review and next action</small></li>
-                </ol>
-                <p class="architecture-note">Illustrative flow; internal endpoints, data and deployment details omitted.</p>
-              </figure>
-              <div class="tags"><span>LLMs</span><span>APIs</span><span>Tool calling</span><span>Human review</span></div>
-            </div>
-          </article>
+<article class="project">
+  <div class="project-main">
+    <div class="project-meta">
+      <span class="project-number">02</span>
+      <span class="project-label">ANONYMIZED CASE STUDY · EVENT-DRIVEN AI PIPELINE</span>
+    </div>
+    <h3>Multi-modal customer context & voice/chat processing.</h3>
+    <p>
+      Designed an event-driven ingestion and synthesis pipeline that decoupled CRM webhooks, processed chat transcripts and voice attachments, and executed validated LLM summarization back into enterprise customer tools.
+    </p>
+    <div class="project-outcome">
+      <span class="outcome-label">System Capability & Reliability</span>
+      <p>
+        Handles async queue dispatching, automated reconciliation for stale events via Cloud Scheduler, and audit logging backed by BigQuery dashboards.
+      </p>
+    </div>
+    <details>
+      <summary>What made it an engineering problem <span aria-hidden="true">↗</span></summary>
+      <p>
+        Building for production meant managing state across Firestore, handling voice transcription via AssemblyAI, ensuring rate-limit recovery with Cloud Tasks, and establishing strict error callbacks when LLM validation failed.
+      </p>
+    </details>
+  </div>
+  <div class="project-aside">
+    <figure class="architecture">
+      <figcaption>High-level cloud architecture</figcaption>
+      <ol>
+        <li><strong>API Gateway &amp; Pub/Sub</strong><small>Ingress publisher &amp; event decoupling</small></li>
+        <li><strong>Cloud Tasks &amp; Firestore</strong><small>Async queue dispatch &amp; lifecycle state</small></li>
+        <li><strong>AssemblyAI &amp; Gemini</strong><small>Voice transcription &amp; LLM validation</small></li>
+        <li><strong>CRM &amp; BigQuery</strong><small>Validated write-back &amp; audit logging</small></li>
+        <li><strong>Scheduler &amp; Alerts</strong><small>Reconciliation loops &amp; retry handlers</small></li>
+      </ol>
+      <p class="architecture-note">Illustrative flow; internal endpoints, data and proprietary business rules omitted.</p>
+    </figure>
+    <div class="tags">
+      <span>GCP</span>
+      <span>Pub/Sub</span>
+      <span>Cloud Tasks</span>
+      <span>Gemini</span>
+      <span>AssemblyAI</span>
+      <span>BigQuery</span>
+    </div>
+  </div>
+</article>
 
           <article class="project">
             <div class="project-main">
