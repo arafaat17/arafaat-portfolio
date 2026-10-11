@@ -71,22 +71,20 @@
     </p>
 
     <!-- Embedded Live Interactive App -->
-    <div style="margin: 24px 0; border: 1px solid #2a3a2e; border-radius: 8px; overflow: hidden; background: #0e1410;">
-      <div style="padding: 10px 16px; background: #151e18; border-bottom: 1px solid #2a3a2e; font-family: 'DM Mono', monospace; font-size: 11px; color: #7b8e7f; display: flex; justify-content: space-between; align-items: center;">
-        <span>LIVE INTERACTIVE SANDBOX</span>
-        <span style="color: #c6f17b; display: flex; items-center; gap: 6px;">
-          <span style="display: inline-block; width: 6px; height: 6px; background: #c6f17b; border-radius: 50%;"></span> ONLINE
-        </span>
-      </div>
-      <iframe 
-        src="https://nodeflow-ai-572218233469.europe-west2.run.app" 
-        width="100%" 
-        height="540px" 
-        style="border: none; display: block;" 
-        title="NodeFlow AI Live Sandbox"
-        loading="lazy">
-      </iframe>
-    </div>
+<div class="demo-iframe-wrapper">
+  <div class="demo-iframe-header">
+    <span>LIVE INTERACTIVE SANDBOX</span>
+    <span style="color: #c6f17b; display: flex; align-items: center; gap: 6px;">
+      <span style="display: inline-block; width: 6px; height: 6px; background: #c6f17b; border-radius: 50%;"></span> ONLINE
+    </span>
+  </div>
+  <iframe 
+    src="https://nodeflow-ai-572218233469.europe-west2.run.app" 
+    class="demo-iframe"
+    title="NodeFlow AI Live Sandbox"
+    loading="lazy">
+  </iframe>
+</div>
 
     <div class="project-outcome">
       <span class="outcome-label">System Capability &amp; Reliability</span>
