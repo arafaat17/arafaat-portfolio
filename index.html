@@ -57,6 +57,55 @@
       <section class="section intro" id="work" aria-labelledby="work-heading">
         <div class="section-heading"><div><p class="kicker">01 / SELECTED WORK</p><h2 id="work-heading">Built for the messy<br><span>middle of real work.</span></h2></div><p>Public code where available. Private work is described at a high level, with client and internal details removed.</p></div>
         <div class="work-list">
+          <!-- NodeFlow AI Project Card -->
+<article class="project">
+  <div class="project-main">
+    <div class="project-meta">
+      <span class="project-number">02</span>
+      <span class="project-label">PUBLIC BUILD · REAL-TIME AI PIPELINE</span>
+    </div>
+    <h3>NodeFlow AI — Visual DAG Execution Engine.</h3>
+    <p>
+      An event-driven microservice pipeline that transforms unstructured text into structured database payloads. It executes a 5-node Directed Acyclic Graph (DAG) and streams real-time node state transitions and latency telemetry to an interactive browser UI using Server-Sent Events (SSE).
+    </p>
+    <div class="project-outcome">
+      <span class="outcome-label">System Capability & Reliability</span>
+      <p>
+        Features sub-400ms local node state transitions, strict Pydantic v2 schema guardrails, and automated exponential backoff retries to gracefully handle transient LLM capacity spikes.
+      </p>
+    </div>
+    <details>
+      <summary>What made it an engineering problem <span aria-hidden="true">↗</span></summary>
+      <p>
+        Replaced traditional HTTP polling with an SSE stream (`text/event-stream`) to deliver microsecond-latency state updates. The system decouples input validation, token calculation, LLM inference, and schema inspection into modular nodes containerized with Docker and deployed serverless on GCP Cloud Run.
+      </p>
+    </details>
+    <div class="project-links" style="margin-top: 16px;">
+      <a href="https://nodeflow-ai-572218233469.europe-west2.run.app" target="_blank" rel="noopener noreferrer">Launch Live App <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+  <div class="project-aside">
+    <figure class="architecture">
+      <figcaption>5-Node DAG Architecture</figcaption>
+      <ol>
+        <li><strong>01 / Ingress</strong><small>Payload &amp; character bound validation</small></li>
+        <li><strong>02 / Parser</strong><small>Token estimation &amp; boilerplate cleanup</small></li>
+        <li><strong>03 / Intelligence</strong><small>Gemini 3.5 Flash &amp; backoff retries</small></li>
+        <li><strong>04 / Guardrail</strong><small>Pydantic boundary inspection</small></li>
+        <li><strong>05 / Outcome</strong><small>Final aggregation &amp; SSE dispatch</small></li>
+      </ol>
+      <p class="architecture-note">Live streaming execution via Server-Sent Events (SSE) on GCP Cloud Run.</p>
+    </figure>
+    <div class="tags">
+      <span>FastAPI</span>
+      <span>SSE Stream</span>
+      <span>Gemini 3.5</span>
+      <span>Pydantic v2</span>
+      <span>Docker</span>
+      <span>GCP Cloud Run</span>
+    </div>
+  </div>
+</article>
           <article class="project project-featured">
             <div class="project-main">
               <div class="project-meta"><span class="project-number">01</span><span class="project-label">PUBLIC BUILD · MEDIA AUTOMATION</span></div>
