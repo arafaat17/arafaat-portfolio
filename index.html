@@ -58,18 +58,38 @@
         <div class="section-heading"><div><p class="kicker">01 / SELECTED WORK</p><h2 id="work-heading">Built for the messy<br><span>middle of real work.</span></h2></div><p>Public code where available. Private work is described at a high level, with client and internal details removed.</p></div>
         <div class="work-list">
 
-          <article class="project">
+          <!-- NodeFlow AI Project Card with Embedded Sandbox -->
+<article class="project">
   <div class="project-main">
     <div class="project-meta">
-      <span class="project-number">01</span>
+      <span class="project-number">02</span>
       <span class="project-label">PUBLIC BUILD · REAL-TIME AI PIPELINE</span>
     </div>
     <h3>NodeFlow AI — Visual DAG Execution Engine.</h3>
     <p>
-      An event-driven microservice pipeline that transforms unstructured text into structured database payloads. It executes a 5-node Directed Acyclic Graph (DAG) and streams real-time node state transitions and latency telemetry to an interactive browser UI using Server-Sent Events (SSE).
+      An event-driven microservice pipeline that transforms unstructured text into structured database payloads. It executes a 5-node Directed Acyclic Graph (DAG) and streams real-time node state transitions and latency telemetry to an interactive UI using Server-Sent Events (SSE).
     </p>
+
+    <!-- Embedded Live Interactive App -->
+    <div style="margin: 24px 0; border: 1px solid #2a3a2e; border-radius: 8px; overflow: hidden; background: #0e1410;">
+      <div style="padding: 10px 16px; background: #151e18; border-bottom: 1px solid #2a3a2e; font-family: 'DM Mono', monospace; font-size: 11px; color: #7b8e7f; display: flex; justify-content: space-between; align-items: center;">
+        <span>LIVE INTERACTIVE SANDBOX</span>
+        <span style="color: #c6f17b; display: flex; items-center; gap: 6px;">
+          <span style="display: inline-block; width: 6px; height: 6px; background: #c6f17b; border-radius: 50%;"></span> ONLINE
+        </span>
+      </div>
+      <iframe 
+        src="https://nodeflow-ai-572218233469.europe-west2.run.app" 
+        width="100%" 
+        height="540px" 
+        style="border: none; display: block;" 
+        title="NodeFlow AI Live Sandbox"
+        loading="lazy">
+      </iframe>
+    </div>
+
     <div class="project-outcome">
-      <span class="outcome-label">System Capability & Reliability</span>
+      <span class="outcome-label">System Capability &amp; Reliability</span>
       <p>
         Features sub-400ms local node state transitions, strict Pydantic v2 schema guardrails, and automated exponential backoff retries to gracefully handle transient LLM capacity spikes.
       </p>
@@ -81,9 +101,10 @@
       </p>
     </details>
     <div class="project-links" style="margin-top: 16px;">
-      <a href="https://nodeflow-ai-572218233469.europe-west2.run.app" target="_blank" rel="noopener noreferrer">Launch Live App <span aria-hidden="true">↗</span></a>
+      <a href="https://nodeflow-ai-572218233469.europe-west2.run.app" target="_blank" rel="noopener noreferrer">Open full screen <span aria-hidden="true">↗</span></a>
     </div>
   </div>
+
   <div class="project-aside">
     <figure class="architecture">
       <figcaption>5-Node DAG Architecture</figcaption>
@@ -106,6 +127,7 @@
     </div>
   </div>
 </article>
+
           <article class="project project-featured">
             <div class="project-main">
               <div class="project-meta"><span class="project-number">02</span><span class="project-label">PUBLIC BUILD · MEDIA AUTOMATION</span></div>
