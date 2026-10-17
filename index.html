@@ -1,345 +1,309 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101510">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <meta name="description" content="Arafaat Shaikh is an AI Automation Specialist | Systems Engineer building useful AI products, reliable workflows, and the cloud systems behind them.">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Arafaat Shaikh — AI Automation Specialist | Systems Engineer">
-  <meta property="og:description" content="AI products that connect models, tools, data, and real workflows.">
-  <meta property="og:url" content="https://arafaatshaikh.mywire.org/">
-  <title>Arafaat Shaikh — AI Automation Specialist | Systems Engineer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Arafaat Shaikh — Systems Engineer · Applied AI &amp; Automation</title>
+<meta name="description" content="Arafaat Shaikh builds applied AI workflows, API integrations, and dependable cloud systems. Explore engineering case studies and interactive previews.">
+<link rel="canonical" href="https://arafaatshaikh.mywire.org/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="Arafaat Shaikh — Systems Engineer">
+<meta property="og:description" content="Applied AI, automation, and the systems behind real operational workflows.">
+<meta property="og:url" content="https://arafaatshaikh.mywire.org/">
+<meta property="og:type" content="website">
+<style>
+.live-pipeline{width:100%;height:790px;border:1px solid #55664a;border-radius:6px;background:#102016}.demo-grid{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr)}.answer{white-space:pre-wrap}button:disabled{cursor:wait;opacity:.65}@media(max-width:800px){.demo-grid{grid-template-columns:1fr}.live-pipeline{height:960px}}
+
+.skip{position:absolute;left:12px;top:-100px;z-index:30;background:#d2f58a;padding:12px}.skip:focus{top:12px}:root{--ink:#17281f;--paper:#f4f3eb;--lime:#d2f58a;--muted:#aab7a8;--line:#cbd0c2}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:85px}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.6}a{color:inherit}button,input{font:inherit}button,a{touch-action:manipulation}button{cursor:pointer}nav{position:sticky;top:0;z-index:10;background:var(--paper);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:15px 5%}.logo{text-decoration:none;font-weight:800;font-size:24px;letter-spacing:-1px}.navlinks{display:flex;gap:26px;align-items:center;font-size:13px}.navlinks a{text-decoration:none}.btn{display:inline-flex;align-items:center;justify-content:center;gap:30px;background:var(--lime);border:1px solid transparent;border-radius:5px;color:var(--ink);padding:13px 20px;text-decoration:none;font-weight:700;font-size:14px}.btn.dark{background:var(--ink);color:var(--paper)}.wrap{max-width:1180px;margin:auto;padding:0 5%}.eyebrow{font:11px/1.6 monospace;letter-spacing:1.6px;text-transform:uppercase}.hero{background:var(--ink);color:var(--paper);padding:80px 0 0;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:60px;align-items:center}h1{font-size:clamp(48px,6.5vw,86px);line-height:1.02;letter-spacing:-4px;margin:25px 0}h1 span{color:var(--lime)}.intro{max-width:600px;color:#c2cdbf;font-size:18px}.actions{display:flex;flex-wrap:wrap;gap:26px;align-items:center;margin:30px 0 45px}.actions>a:not(.btn){font-size:14px;text-underline-offset:6px}.system{border:1px solid #53624e;border-radius:12px;padding:22px;background:#213226;transform:rotate(2deg)}.system .eyebrow{color:var(--muted);margin-bottom:20px}.system-row{background:#eff2e7;color:var(--ink);padding:19px;border-radius:5px;margin:0 0 12px;display:flex;justify-content:space-between;align-items:center}.system-row:nth-child(3){background:var(--lime)}.system-row small{display:block;font:10px monospace;letter-spacing:1px;margin-bottom:4px}.system-row b{font-size:19px}.arrow{text-align:center;color:var(--lime);margin:-8px 0 4px}.ownership{display:flex;gap:0;border-top:1px solid #43543f;margin-top:30px}.ownership div{flex:1;padding:23px 12px 23px 0}.ownership b{display:block;font-size:14px}.ownership span{font-size:12px;color:var(--muted)}section{padding:80px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:35px}h2{font-size:clamp(33px,4vw,49px);letter-spacing:-2px;line-height:1.12;margin:13px 0}h3{font-size:24px;line-height:1.2;letter-spacing:-.7px;margin:12px 0}p{margin:12px 0}.section-head p{max-width:340px;font-size:14px;color:#596454}.case{border-top:2px solid var(--ink);display:grid;grid-template-columns:1fr 1fr;gap:50px;padding:32px 0}.tag{font:10px monospace;letter-spacing:1px;display:inline-block;padding:5px 9px;background:#e4e8dc;border-radius:3px}.case p{color:#51604f;font-size:15px}.flow{background:#e7ebdf;border-radius:8px;padding:24px;display:grid;gap:8px}.flow div{border-left:2px solid #80975e;padding:9px 15px;background:#f4f5ee}.flow b{display:block;font-size:14px}.flow small{font-size:12px;color:#5c6857}.details{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,1fr);gap:28px;border-top:1px solid var(--line);padding-top:24px}.details h4{margin:5px 0;font-size:15px}.details p{font-size:14px}details{border-top:1px solid var(--line);padding:14px 0}summary{cursor:pointer;font-weight:700;font-size:14px}.more-work{display:grid;grid-template-columns:1fr 1fr;gap:35px;margin-top:25px}.more-work article{border-top:1px solid var(--ink);padding-top:18px}.more-work p{font-size:14px;color:#51604f}.demo-section{background:#e6eadd}.demo-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:30px}.sandbox,.assistant{border-radius:10px;padding:25px;background:var(--ink);color:var(--paper)}.sandbox p,.assistant p{color:#b9c7b4;font-size:14px}.sandbox h3,.assistant h3{margin-top:10px}.input-row{display:flex;gap:10px;margin:20px 0}input{width:100%;min-width:0;background:#233528;color:var(--paper);border:1px solid #67765b;border-radius:4px;padding:12px;font-size:14px}label{display:block;font-size:12px;color:#c3d1ba;margin-top:20px}.stages{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin:23px 0}.stage{border:1px solid #55664a;border-radius:5px;padding:14px 8px;font-size:11px;text-align:center}.stage span{display:block;color:#aebca5;font:9px monospace;margin-top:6px}.stage.active{border-color:var(--lime);background:#34462a}.stage.done{color:var(--lime)}.result{white-space:pre-wrap;background:#102016;padding:15px;min-height:92px;border-radius:5px;font:12px/1.7 monospace;color:#cde3b6}.chips{display:flex;flex-wrap:wrap;gap:7px;margin:20px 0}.chips button{border:1px solid #5a6b50;background:transparent;color:#d5dfce;padding:8px 10px;border-radius:20px;font-size:12px}.chips button:hover{background:#34462a}.answer{border-left:2px solid var(--lime);padding:4px 0 4px 15px;min-height:130px;font-size:14px;color:#d2ddcc}.note{font:10px/1.7 monospace!important;color:#a8b79d!important}.principles{display:grid;grid-template-columns:repeat(3,1fr);gap:35px;margin-top:35px}.principles article{border-top:1px solid var(--ink);padding-top:18px}.principles p{font-size:14px;color:#52624d}.contact{background:var(--lime);padding:65px 0}.contact .wrap{display:flex;align-items:center;justify-content:space-between;gap:25px}.contact p{max-width:550px}footer{padding:25px 5%;display:flex;justify-content:space-between;font-size:11px}.preview{background:#dce3d3;text-align:center;font:10px/1.6 monospace;padding:7px}a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid #839e45;outline-offset:4px}@media(max-width:800px){.hero-grid,.case,.demo-grid{grid-template-columns:1fr}.hero{padding-top:45px}.system{transform:none;margin-bottom:20px}.ownership{flex-wrap:wrap}.ownership div{flex:1 1 50%}.details{grid-template-columns:1fr;gap:10px}.hero-grid{gap:20px}.section-head{display:block}.section-head p{max-width:none}.principles{grid-template-columns:1fr;gap:20px}h1{letter-spacing:-2.5px}.contact .wrap{display:block}.contact .btn{margin-top:15px}.navlinks{gap:15px}.navlinks .optional{display:none}section{padding:55px 0}}@media(max-width:480px){.more-work{grid-template-columns:1fr}.sandbox,.assistant{padding:18px}.input-row{flex-direction:column}.stages{gap:4px}.stage{font-size:10px;padding:12px 3px}.actions{gap:18px}.ownership span{font-size:11px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
 </head>
 <body>
-  <a class="skip" href="#main">Skip to content</a>
-  <div class="site-shell">
-    <header class="topbar">
-      <a class="wordmark" href="#top" aria-label="Arafaat Shaikh, back to top"><span class="mark">a<span class="mark-dot">.</span></span><span>Arafaat Shaikh</span></a>
-      <nav aria-label="Main navigation">
-        <a href="#work">Work</a>
-        <a href="#approach">Approach</a>
-        <a href="#about">About</a>
-        <a class="nav-contact" href="mailto:hello@arafaatshaikh.mywire.org">Let's talk <span aria-hidden="true">↗</span></a>
-      </nav>
-    </header>
-
-    <main id="main">
-      <section class="hero" id="top" aria-labelledby="hero-heading">
-        <div class="hero-copy">
-          <div class="eyebrow"><span class="status-dot" aria-hidden="true"></span> ENGINEERING AI FOR REAL WORKFLOWS</div>
-          <h1 id="hero-heading">Ideas are easy.<br><em>Useful systems</em><br>take engineering<span class="accent">.</span></h1>
-          <p class="hero-lede">I’m Arafaat, an <strong>AI Automation Specialist and Systems Engineer</strong>. I connect language models, APIs, data, and cloud infrastructure to make complicated work simpler and more reliable.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#work">Explore selected work <span aria-hidden="true">↗</span></a>
-            <a class="text-link" href="https://github.com/arafaat17" target="_blank" rel="noopener noreferrer">GitHub profile <span aria-hidden="true">↗</span></a>
-          </div>
-        </div>
-        <div class="hero-visual" aria-label="Illustration of an AI workflow connecting an event to tools, reasoning, and a human review" role="img">
-          <div class="visual-topline"><span>FIG 01 / THE WORKFLOW</span><span class="visual-live"><span></span> HUMAN-IN-LOOP</span></div>
-          <div class="flow-grid">
-            <div class="flow-node flow-input"><span class="node-index">01 / INPUT</span><strong>Signals &amp; context</strong><small>Events · documents · APIs</small></div>
-            <div class="flow-connector" aria-hidden="true"><i></i></div>
-            <div class="flow-node flow-model"><span class="node-index">02 / INTELLIGENCE</span><div class="model-glyph" aria-hidden="true">✳</div><strong>Reason + route</strong><small>Models · tools · guardrails</small></div>
-            <div class="flow-connector" aria-hidden="true"><i></i></div>
-            <div class="flow-node flow-output"><span class="node-index">03 / OUTCOME</span><strong>Useful action</strong><small>Review · decide · automate</small></div>
-          </div>
-          <div class="visual-footer"><span><b>DESIGN PRINCIPLE</b> Make the next step clear, observable, and reversible.</span><span>↗</span></div>
-        </div>
-        <div class="hero-bottom"><span>BUILDING AT THE INTERSECTION OF AI, PRODUCT &amp; SYSTEMS</span><span>SCROLL TO EXPLORE ↓</span></div>
-      </section>
-
-      <section class="section intro" id="work" aria-labelledby="work-heading">
-        <div class="section-heading"><div><p class="kicker">01 / SELECTED WORK</p><h2 id="work-heading">Built for the messy<br><span>middle of real work.</span></h2></div><p>Public code where available. Private work is described at a high level, with client and internal details removed.</p></div>
-        <div class="work-list">
-
-          <!-- NodeFlow AI Project Card with Embedded Sandbox -->
-<article class="project">
-  <div class="project-main">
-    <div class="project-meta">
-      <span class="project-number">02</span>
-      <span class="project-label">PUBLIC BUILD · REAL-TIME AI PIPELINE</span>
-    </div>
-    <h3>NodeFlow AI — Visual DAG Execution Engine.</h3>
-    <p>
-      An event-driven microservice pipeline that transforms unstructured text into structured database payloads. It executes a 5-node Directed Acyclic Graph (DAG) and streams real-time node state transitions and latency telemetry to an interactive UI using Server-Sent Events (SSE).
-    </p>
-
-    <!-- Embedded Live Interactive App -->
-<div class="demo-iframe-wrapper">
-  <div class="demo-iframe-header">
-    <span>LIVE INTERACTIVE SANDBOX</span>
-    <span style="color: #c6f17b; display: flex; align-items: center; gap: 6px;">
-      <span style="display: inline-block; width: 6px; height: 6px; background: #c6f17b; border-radius: 50%;"></span> ONLINE
-    </span>
-  </div>
-  <iframe 
-    src="https://nodeflow-ai-572218233469.europe-west2.run.app" 
-    class="demo-iframe"
-    title="NodeFlow AI Live Sandbox"
-    loading="lazy">
-  </iframe>
+<a class="skip" href="#main">Skip to content</a>
+<nav>
+<a class="logo" href="#">arafaat<span style="color:#769343">.</span>
+</a>
+<div class="navlinks">
+<a href="#work">Selected work</a>
+<a href="#demos">Try the demos</a>
+<a href="https://www.linkedin.com/in/arafaat-shaikh-562038165/">LinkedIn ↗</a>
+<a class="btn dark optional" href="mailto:hello@arafaatshaikh.mywire.org">Let’s talk ↗</a>
 </div>
-
-    <div class="project-outcome">
-      <span class="outcome-label">System Capability &amp; Reliability</span>
-      <p>
-        Features sub-400ms local node state transitions, strict Pydantic v2 schema guardrails, and automated exponential backoff retries to gracefully handle transient LLM capacity spikes.
-      </p>
-    </div>
-    <details>
-      <summary>What made it an engineering problem <span aria-hidden="true">↗</span></summary>
-      <p>
-        Replaced traditional HTTP polling with an SSE stream (`text/event-stream`) to deliver microsecond-latency state updates. The system decouples input validation, token calculation, LLM inference, and schema inspection into modular nodes containerized with Docker and deployed serverless on GCP Cloud Run.
-      </p>
-    </details>
-    <div class="project-links" style="margin-top: 16px;">
-      <a href="https://nodeflow-ai-572218233469.europe-west2.run.app" target="_blank" rel="noopener noreferrer">Open full screen <span aria-hidden="true">↗</span></a>
-    </div>
-  </div>
-
-  <div class="project-aside">
-    <figure class="architecture">
-      <figcaption>5-Node DAG Architecture</figcaption>
-      <ol>
-        <li><strong>01 / Ingress</strong><small>Payload &amp; character bound validation</small></li>
-        <li><strong>02 / Parser</strong><small>Token estimation &amp; boilerplate cleanup</small></li>
-        <li><strong>03 / Intelligence</strong><small>Gemini 3.5 Flash &amp; backoff retries</small></li>
-        <li><strong>04 / Guardrail</strong><small>Pydantic boundary inspection</small></li>
-        <li><strong>05 / Outcome</strong><small>Final aggregation &amp; SSE dispatch</small></li>
-      </ol>
-      <p class="architecture-note">Live streaming execution via Server-Sent Events (SSE) on GCP Cloud Run.</p>
-    </figure>
-    <div class="tags">
-      <span>FastAPI</span>
-      <span>SSE Stream</span>
-      <span>Gemini 3.5</span>
-      <span>Pydantic v2</span>
-      <span>Docker</span>
-      <span>GCP Cloud Run</span>
-    </div>
-  </div>
+</nav>
+<main id="main">
+<header class="hero">
+<div class="wrap">
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Arafaat Shaikh / Systems Engineer · Applied AI & Automation</div>
+<h1>From a messy workflow<br>to a system<br>
+<span>people can use.</span>
+</h1>
+<p class="intro">I connect AI, APIs, and cloud infrastructure to turn complex operational work into dependable tools.</p>
+<p class="intro" style="font-size:15px">My work spans customer workflows, event-driven pipelines, document intelligence, and the interfaces that make them usable.</p>
+<div class="actions">
+<a class="btn" href="#work">See how I build <span>↘</span>
+</a>
+<a href="https://github.com/arafaat17">GitHub ↗</a>
+<a href="https://www.linkedin.com/in/arafaat-shaikh-562038165/">LinkedIn ↗</a>
+</div>
+</div>
+<div class="system">
+<div class="eyebrow">The work, from end to end</div>
+<div class="system-row">
+<div>
+<small>01 / UNDERSTAND</small>
+<b>A real operational problem</b>
+</div>
+<span>↗</span>
+</div>
+<div class="arrow">↓</div>
+<div class="system-row">
+<div>
+<small>02 / ENGINEER</small>
+<b>APIs + AI + infrastructure</b>
+</div>
+<span>✳</span>
+</div>
+<div class="arrow">↓</div>
+<div class="system-row">
+<div>
+<small>03 / OPERATE</small>
+<b>Review. Observe. Recover.</b>
+</div>
+<span>↻</span>
+</div>
+</div>
+</div>
+<div class="ownership">
+<div>
+<b>Workflow & integration</b>
+<span>Events, APIs, customer context</span>
+</div>
+<div>
+<b>Applied AI</b>
+<span>Extraction, synthesis, validation</span>
+</div>
+<div>
+<b>Cloud engineering</b>
+<span>Queues, state, deployment</span>
+</div>
+<div>
+<b>Operational reliability</b>
+<span>Logs, retries, reconciliation</span>
+</div>
+</div>
+</div>
+</header>
+<section id="work">
+<div class="wrap">
+<div class="section-head">
+<div>
+<div class="eyebrow">01 / Selected work</div>
+<h2>The problem.<br>The decisions. The system.</h2>
+</div>
+<p>Public builds and anonymised work. Internal data and proprietary implementation details are omitted.</p>
+</div>
+<article class="case">
+<div>
+<span class="tag">ANONYMISED CASE STUDY / CUSTOMER OPERATIONS</span>
+<h3>Bring voice and chat context into the customer workflow.</h3>
+<p>Customer context arrives through CRM events, chat transcripts, and voice attachments. The engineering challenge is coordinating that work and returning a validated summary to the tools people already use.</p>
+<p>
+<b style="color:var(--ink)">My contribution</b>
+<br>Designed an event-driven ingestion and synthesis pipeline, including asynchronous processing, validated LLM summarisation, reconciliation, and audit visibility.</p>
+<div class="tag">GCP · Python · Gemini · AssemblyAI · BigQuery</div>
+</div>
+<div class="flow" aria-label="High-level architecture">
+<div>
+<b>Receive & decouple</b>
+<small>CRM webhook → gateway → Pub/Sub</small>
+</div>
+<div>
+<b>Queue & track</b>
+<small>Cloud Tasks + Firestore lifecycle state</small>
+</div>
+<div>
+<b>Transcribe & synthesise</b>
+<small>Voice transcription + validated LLM output</small>
+</div>
+<div>
+<b>Return & observe</b>
+<small>CRM write-back + BigQuery audit trail</small>
+</div>
+<div>
+<b>Reconcile</b>
+<small>Scheduled checks for stale events</small>
+</div>
+</div>
+<div class="details">
+<div>
+<div class="eyebrow">The decision</div>
+<h4>Separate receiving from processing.</h4>
+<p>Decoupling webhook ingestion from transcription and synthesis lets the work move through an asynchronous pipeline.</p>
+</div>
+<div>
+<div class="eyebrow">The reliability work</div>
+<h4>Account for unfinished work.</h4>
+<p>Lifecycle state, audit logging, and scheduled reconciliation make stale events visible and support recovery.</p>
+</div>
+<div>
+<div class="eyebrow">The resulting capability</div>
+<h4>Validated context in existing tools.</h4>
+<p>The pipeline returns synthesised customer context to enterprise tools, with an audit trail for investigation.</p>
+</div>
+</div>
 </article>
-
-          <article class="project project-featured">
-            <div class="project-main">
-              <div class="project-meta"><span class="project-number">02</span><span class="project-label">PUBLIC BUILD · MEDIA AUTOMATION</span></div>
-              <h3>From raw media to a ready-to-share video.</h3>
-              <p>A Streamlit tool that turns uploaded vehicle images or footage and a script into a vertical video with generated narration. It handles clip timing, aspect ratio, audio, and the final export in one flow.</p>
-              <div class="project-links"><a href="https://github.com/arafaat17/car-video-gen" target="_blank" rel="noopener noreferrer">View source code <span aria-hidden="true">↗</span></a></div>
-            </div>
-            <div class="project-aside">
-              <div class="project-art video-art" aria-hidden="true">
-                <div class="video-frame"><div class="frame-sun"></div><div class="frame-horizon"></div><div class="frame-play">▶</div><span>00:15 / 9:16</span></div>
-                <div class="art-caption">SCRIPT <span>→</span> NARRATION <span>→</span> REEL</div>
-              </div>
-              <div class="tags"><span>Python</span><span>Streamlit</span><span>MoviePy</span><span>Text to speech</span></div>
-            </div>
-          </article>
-
-          <article class="project">
-            <div class="project-main">
-              <div class="project-meta">
-                <span class="project-number">03</span>
-                <span class="project-label">ANONYMIZED CASE STUDY · EVENT-DRIVEN AI PIPELINE</span>
-              </div>
-              <h3>Multi-modal customer context &amp; voice/chat processing.</h3>
-              <p>
-                Designed an event-driven ingestion and synthesis pipeline that decoupled CRM webhooks, processed chat transcripts and voice attachments, and executed validated LLM summarization back into enterprise customer tools.
-              </p>
-              <div class="project-outcome">
-                <span class="outcome-label">System Capability &amp; Reliability</span>
-                <p>
-                  Handles async queue dispatching, automated reconciliation for stale events via Cloud Scheduler, and audit logging backed by BigQuery dashboards.
-                </p>
-              </div>
-              <details>
-                <summary>What made it an engineering problem <span aria-hidden="true">↗</span></summary>
-                <p>
-                  Building for production meant managing state across Firestore, handling voice transcription via AssemblyAI, ensuring rate-limit recovery with Cloud Tasks, and establishing strict error callbacks when LLM validation failed.
-                </p>
-              </details>
-            </div>
-            <div class="project-aside">
-              <figure class="architecture">
-                <figcaption>High-level cloud architecture</figcaption>
-                <ol>
-                  <li><strong>API Gateway &amp; Pub/Sub</strong><small>Ingress publisher &amp; event decoupling</small></li>
-                  <li><strong>Cloud Tasks &amp; Firestore</strong><small>Async queue dispatch &amp; lifecycle state</small></li>
-                  <li><strong>AssemblyAI &amp; Gemini</strong><small>Voice transcription &amp; LLM validation</small></li>
-                  <li><strong>CRM &amp; BigQuery</strong><small>Validated write-back &amp; audit logging</small></li>
-                  <li><strong>Scheduler &amp; Alerts</strong><small>Reconciliation loops &amp; retry handlers</small></li>
-                </ol>
-                <p class="architecture-note">Illustrative flow; internal endpoints, data and proprietary business rules omitted.</p>
-              </figure>
-              <div class="tags">
-                <span>GCP</span>
-                <span>Pub/Sub</span>
-                <span>Cloud Tasks</span>
-                <span>Gemini</span>
-                <span>AssemblyAI</span>
-                <span>BigQuery</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="project">
-            <div class="project-main">
-              <div class="project-meta"><span class="project-number">04</span><span class="project-label">ANONYMIZED CASE STUDY · DOCUMENT INTELLIGENCE</span></div>
-              <h3>Make long documents easier to act on.</h3>
-              <p>Built a document analysis workflow that turns lengthy case material and conversation history into structured summaries, with attention to source context and separation between sessions.</p>
-              <div class="project-outcome">
-                <span class="outcome-label">System Capability &amp; Outcome</span>
-                <p>Unifies multi-document ingestion, session isolation, and LLM text extractions into a single review interface with source context attribution.</p>
-              </div>
-              <details><summary>What made it an engineering problem <span aria-hidden="true">↗</span></summary><p>The work spans ingestion, model orchestration, access boundaries, and an interface that lets a person inspect and use the result. The goal is faster understanding while keeping judgment with the reviewer.</p></details>
-            </div>
-            <div class="project-aside">
-              <figure class="architecture">
-                <figcaption>High-level architecture</figcaption>
-                <ol>
-                  <li><strong>Upload</strong><small>Session-scoped input</small></li>
-                  <li><strong>Python / Cloud Run</strong><small>Extract and orchestrate</small></li>
-                  <li><strong>Gemini</strong><small>Structured analysis</small></li>
-                  <li><strong>Review UI</strong><small>Inspect source context</small></li>
-                </ol>
-                <p class="architecture-note">Illustrative flow; internal endpoints, data and deployment details omitted.</p>
-              </figure>
-              <div class="tags"><span>Python</span><span>Gemini</span><span>Cloud Run</span><span>Document UX</span></div>
-            </div>
-          </article>
-
-          <article class="project">
-            <div class="project-main">
-              <div class="project-meta"><span class="project-number">05</span><span class="project-label">ANONYMIZED CASE STUDY · AUTOMATION</span></div>
-              <h3>Keep the workflow working after launch.</h3>
-              <p>Connected events, APIs, and cloud services into operational workflows, then investigated failures and added clearer retry and alerting paths. The focus: making automation understandable when something goes wrong.</p>
-              <div class="project-outcome">
-                <span class="outcome-label">System Capability &amp; Outcome</span>
-                <p>Establishes centralized event routing, automated retry handlers, and logging mechanisms to identify and resolve operational failures across cloud services.</p>
-              </div>
-              <details><summary>What made it an engineering problem <span aria-hidden="true">↗</span></summary><p>A useful workflow needs dependable handoffs, good failure signals, and a safe way to recover. I work across the application and infrastructure layers to make those pieces fit.</p></details>
-            </div>
-            <div class="project-aside">
-              <figure class="architecture">
-                <figcaption>High-level architecture</figcaption>
-                <ol>
-                  <li><strong>Webhook</strong><small>Receive event</small></li>
-                  <li><strong>n8n</strong><small>Route and orchestrate</small></li>
-                  <li><strong>API / cloud service</strong><small>Perform task</small></li>
-                  <li><strong>Logs and alerts</strong><small>Investigate / retry</small></li>
-                </ol>
-                <p class="architecture-note">Illustrative flow; internal endpoints, data and deployment details omitted.</p>
-              </figure>
-              <div class="tags"><span>n8n</span><span>Webhooks</span><span>GCP</span><span>Observability</span></div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section approach" id="approach" aria-labelledby="approach-heading">
-        <div class="section-heading"><div><p class="kicker">02 / HOW I WORK</p><h2 id="approach-heading">The model is one part<br><span>of the system.</span></h2></div><p>The best applied AI work starts with a real user task and ends with something people can trust and operate.</p></div>
-        <div class="principles">
-          <div><span class="principle-number">01 /</span><h3>Start with the job</h3><p>Understand the decision, handoff, or repetitive task before choosing a model or framework.</p></div>
-          <div><span class="principle-number">02 /</span><h3>Connect the pieces</h3><p>Make APIs, data, prompts, interfaces, and deployment work as one coherent product.</p></div>
-          <div><span class="principle-number">03 /</span><h3>Design for reality</h3><p>Build in review, visibility, and recovery so the system stays useful beyond a demo.</p></div>
-        </div>
-      </section>
-
-      <section class="section about" id="about" aria-labelledby="about-heading">
-        <div><p class="kicker">03 / ABOUT</p><h2 id="about-heading">Curious about the<br><span>whole stack.</span></h2></div>
-        <div class="about-copy">
-          <p>My work sits between product thinking and implementation. I enjoy finding practical ways AI can improve complex workflows, then building the integrations and cloud infrastructure that make them dependable.</p>
-          <p>My background as a Systems Engineer shapes how I build: with an emphasis on system reliability, data integrity, and intuitive interfaces for end users.</p>
-          <div class="focus-list"><span>APPLIED AI</span><span>AUTOMATION</span><span>PYTHON</span><span>APIs</span><span>GCP</span><span>PRODUCT ENGINEERING</span></div>
-        </div>
-      </section>
-
-      <section class="section assistant-section" aria-labelledby="assistant-heading">
-        <div class="section-heading">
-          <div>
-            <p class="kicker">INTERACTIVE DEMO / SYSTEM PROMPT</p>
-            <h2 id="assistant-heading">Interrogate this<br><span>portfolio system.</span></h2>
-          </div>
-          <p>A lightweight assistant stuffed with my background, GCP pipeline architectures, and tool stacks.</p>
-        </div>
-
-        <div class="assistant-card">
-          <div class="assistant-header">
-            <span class="status-dot" aria-hidden="true"></span>
-            <span>ENGINE: GEMINI 3.5 FLASH</span>
-          </div>
-          <form id="portfolio-assistant-form" class="assistant-form">
-            <input 
-              type="text" 
-              id="assistant-input" 
-              placeholder="e.g., How do you handle Pub/Sub retries in GCP?" 
-              required 
-              maxlength="200"
-            >
-            <button type="submit" id="assistant-submit" class="button button-primary">
-              Ask System <span aria-hidden="true">→</span>
-            </button>
-          </form>
-          <div id="assistant-output" class="assistant-output" hidden></div>
-        </div>
-      </section>
-
-      <section class="contact" aria-labelledby="contact-heading">
-        <div><p class="kicker">04 / LET'S CONNECT</p><h2 id="contact-heading">Want to discuss<br><em>systems or workflows?</em></h2><p>Feel free to reach out to connect or discuss applied AI, automation, and cloud architecture.</p></div>
-        <div class="contact-actions">
-          <a class="button button-light" href="mailto:hello@arafaatshaikh.mywire.org?subject=Let%27s%20connect">Send me an email <span aria-hidden="true">↗</span></a>
-          <a href="https://github.com/arafaat17" target="_blank" rel="noopener noreferrer">Explore my GitHub <span aria-hidden="true">↗</span></a>
-        </div>
-      </section>
-    </main>
-    <footer><span>© 2026 Arafaat Shaikh</span><span>Designed for clarity. Built to ship.</span><a href="#top">Back to top ↑</a></footer>
-  </div>
-
-  <script>
-    const form = document.getElementById('portfolio-assistant-form');
-    const input = document.getElementById('assistant-input');
-    const submitBtn = document.getElementById('assistant-submit');
-    const output = document.getElementById('assistant-output');
-
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const userQuery = input.value.trim();
-      if (!userQuery) return;
-
-      submitBtn.disabled = true;
-      submitBtn.textContent = 'Querying...';
-      output.hidden = false;
-      output.innerHTML = '<em>Consulting portfolio context...</em>';
-
-      try {
-        const res = await fetch('/api/chat', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ message: userQuery })
-        });
-
-        const data = await res.json();
-
-        if (data.reply) {
-          output.innerHTML = `<p>${data.reply}</p>`;
-        } else if (data.error) {
-          output.innerHTML = `<p style="color: #ff9999;"><strong>System Notice:</strong> ${data.error}</p>`;
-        } else {
-          output.innerHTML = '<p>Unexpected system response. Please try again.</p>';
-        }
-      } catch (err) {
-        output.innerHTML = '<p>Unable to connect to assistant service. Please email Arafaat directly.</p>';
-      } finally {
-        submitBtn.disabled = false;
-        submitBtn.innerHTML = 'Ask System <span aria-hidden="true">→</span>';
-      }
+<div class="more-work">
+<article>
+<span class="eyebrow">PUBLIC BUILD / MEDIA AUTOMATION</span>
+<h3>Raw media to a shareable video.</h3>
+<p>A Streamlit workflow that combines vehicle media and a script into a vertical video, handling narration, clip timing, aspect ratio, and export.</p>
+<a href="https://github.com/arafaat17/car-video-gen">Inspect the source ↗</a>
+</article>
+<article>
+<span class="eyebrow">ANONYMISED WORK / DOCUMENT INTELLIGENCE</span>
+<h3>Long documents to reviewable context.</h3>
+<p>A document analysis workflow combining session-scoped ingestion, structured summaries, and source context in a review interface.</p>
+<details>
+<summary>What makes this an engineering problem?</summary>
+<p>Keeping sessions separate, coordinating multiple documents, and retaining source context all matter alongside the model’s response.</p>
+</details>
+</article>
+</div>
+</div>
+</section>
+<section class="demo-section" id="demos">
+<div class="wrap">
+<div class="section-head">
+<div>
+<div class="eyebrow">02 / Explore the work</div>
+<h2>Try the flow.<br>Ask about the decisions.</h2>
+</div>
+<p>Run the live NodeFlow pipeline and ask the Gemini-powered portfolio assistant about my work.</p>
+</div>
+<div class="demo-grid">
+<article class="sandbox">
+<span class="eyebrow">INTERACTIVE 01 / PIPELINE EXPLORER</span>
+<h3>See what happens between input and output.</h3>
+<p>Follow validation, parsing, extraction, schema checking, and output without digging through a log stream.</p>
+<iframe class="live-pipeline" src="https://nodeflow-ai-572218233469.europe-west2.run.app/" title="NodeFlow AI live pipeline sandbox" loading="lazy"></iframe>
+<p class="note">LIVE SANDBOX · Input is processed by the NodeFlow service. Use sample text, not private information.</p>
+<a style="font-size:12px;color:var(--lime)" href="https://nodeflow-ai-572218233469.europe-west2.run.app/" target="_blank" rel="noopener">Open the original live NodeFlow sandbox ↗</a>
+</article>
+<article class="assistant">
+<span class="eyebrow">INTERACTIVE 02 / PORTFOLIO GUIDE</span>
+<h3>Ask about my work.</h3>
+<p>Start with a question, or choose a topic below.</p>
+<div class="chips">
+<button data-topic="ownership">What are your core technical skills?</button>
+<button data-topic="reliability">How do you handle failures?</button>
+<button data-topic="cloud">What have you built with GCP?</button>
+</div>
+<label for="question">Your question</label>
+<div class="input-row">
+<input maxlength="2000" id="question" placeholder="e.g. What is your GCP experience?">
+<button class="btn" id="ask">Ask ↗</button>
+</div>
+<div class="answer" id="answer" aria-live="polite">I can explain the projects, engineering responsibilities, and reliability approach described in this portfolio.</div>
+<p class="note" id="assistant-status" role="status">GEMINI ASSISTANT · Questions are sent to the AI service. Curated answers are available if the service is unavailable.</p>
+</article>
+</div>
+</div>
+</section>
+<section>
+<div class="wrap">
+<div class="eyebrow">03 / How I work</div>
+<h2>The work continues<br>after the first successful run.</h2>
+<div class="principles">
+<article>
+<span class="eyebrow">01 / Understand the job</span>
+<h3>Start with the handoff.</h3>
+<p>Understand what someone is trying to do, where the context lives, and what makes the task difficult before choosing a model.</p>
+</article>
+<article>
+<span class="eyebrow">02 / Make boundaries explicit</span>
+<h3>Connect with care.</h3>
+<p>Make event contracts, validation, state, and review part of the workflow so each component has a clear responsibility.</p>
+</article>
+<article>
+<span class="eyebrow">03 / Make recovery possible</span>
+<h3>Build for investigation.</h3>
+<p>Use logs, retries, alerts, and reconciliation to understand what happened and find work that needs attention.</p>
+</article>
+</div>
+</div>
+</section>
+<section class="contact">
+<div class="wrap">
+<div>
+<div class="eyebrow">04 / Let’s connect</div>
+<h2>Have a workflow<br>that needs engineering?</h2>
+<p>Let’s talk about applied AI, customer operations, and the systems that connect them.</p>
+</div>
+<div>
+<a class="btn dark" href="mailto:hello@arafaatshaikh.mywire.org">Talk to me ↗</a>
+<p>
+<a href="https://www.linkedin.com/in/arafaat-shaikh-562038165/">Connect on LinkedIn ↗</a>
+</p>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<span>© 2026 Arafaat Shaikh</span>
+<a href="#">Back to top ↑</a>
+</footer>
+<script>
+const answers={ownership:'My work spans APIs, data, AI orchestration, cloud infrastructure, and user interfaces. In the customer-context case study, my contribution includes pipeline design, asynchronous processing, validated summarisation, reconciliation, and audit visibility.',reliability:'The customer-context pipeline uses lifecycle state, scheduled reconciliation for stale events, and BigQuery-backed audit visibility. My automation work also includes investigating failures and improving retry and alerting paths.',projects:'Explore the customer-context case study for asynchronous architecture and reliability. Try the original NodeFlow sandbox for live pipeline execution, or inspect the car-video-gen repository for a public media automation build.',cloud:'My portfolio includes GCP services such as Pub/Sub, Cloud Tasks, Firestore, Cloud Run, Cloud Scheduler, and BigQuery, used across event-driven processing, document analysis, and operational visibility.'};
+const question = document.getElementById('question');
+const askButton = document.getElementById('ask');
+const answer = document.getElementById('answer');
+const status = document.getElementById('assistant-status');
+const topicButtons = [...document.querySelectorAll('[data-topic]')];
+function fallback(message) {
+  if (/fail|retry|reliab|recover|error/i.test(message)) return answers.reliability;
+  if (/gcp|cloud|infra/i.test(message)) return answers.cloud;
+  if (/project|demo|code|build/i.test(message)) return answers.projects;
+  if (/own|role|skill|experience|responsib/i.test(message)) return answers.ownership;
+  return 'I can share curated information about ownership, projects, GCP, and reliability. Choose a suggested topic or email hello@arafaatshaikh.mywire.org for more detail.';
+}
+async function ask() {
+  if (askButton.disabled) return;
+  const message = question.value.trim();
+  if (!message) { answer.textContent = 'Type a question or choose a suggested topic.'; question.focus(); return; }
+  askButton.disabled = true;
+  topicButtons.forEach(button => button.disabled = true);
+  askButton.textContent = 'Asking…';
+  answer.textContent = 'Consulting portfolio context…';
+  status.textContent = 'Connecting to the Gemini assistant…';
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 20000);
+  try {
+    const response = await fetch('/api/chat', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ message }), signal: controller.signal
     });
-  </script>
+    if (!response.ok) throw new Error('Assistant unavailable');
+    const data = await response.json();
+    if (typeof data.reply !== 'string' || !data.reply.trim()) throw new Error('Empty reply');
+    answer.textContent = data.reply;
+    status.textContent = 'AI-generated answer · Grounded in portfolio context.';
+  } catch {
+    answer.textContent = fallback(message);
+    status.textContent = 'Live assistant unavailable · Showing a curated portfolio answer. Try again to reconnect.';
+  } finally {
+    clearTimeout(timeout);
+    askButton.disabled = false;
+    topicButtons.forEach(button => button.disabled = false);
+    askButton.textContent = 'Ask ↗';
+  }
+}
+topicButtons.forEach(button => button.addEventListener('click', () => {
+  question.value = button.textContent;
+  ask();
+}));
+askButton.addEventListener('click', ask);
+question.addEventListener('keydown', event => { if (event.key === 'Enter') ask(); });
+</script>
 </body>
 </html>
